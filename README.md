@@ -1,17 +1,17 @@
 # Retail Sales Performance Analysis
 
-## Overview
+##  Overview
 A data analysis project examining retail sales, profit, and discount trends
 across regions, categories, and customer segments using SQL and Excel/Numbers.
 Built to identify where the business is losing margin and recommend pricing
 actions.
 
-## Business Problem
+##  Business Problem
 Leadership wants to understand which regions/categories are underperforming
 on profit despite strong sales, and whether current discounting practices
 are eroding margin.
 
-## Dataset
+##  Dataset
 - Source: Sample Superstore Dataset (Kaggle)
 - Size: ~9,994 rows
 - Fields: Ship mode, segment, country, city, state, postal code, region,
@@ -22,7 +22,7 @@ are eroding margin.
 - MySQL Workbench — schema design and SQL analysis
 - Numbers (Excel-equivalent) — data visualization
 
-## Process
+##  Process
 1. **Schema Design**: Loaded the Superstore CSV into a MySQL table
    (`retail_analysis.sales`) with appropriate data types for each field
 2. **Data Import**: Verified successful import of all 9,994 rows via MySQL
@@ -60,17 +60,14 @@ three segments. Home Office, despite generating the least revenue, is the
 most profitable segment by margin (14.0%).
 
 ## Dashboard Preview
-![Profit Margin by Region and Category](./screenshots/dashboard_region_category.png)
-![Average Profit by Discount Bracket](./screenshots/dashboard_discount_impact.png)
-![Sales Distribution by Customer Segment](./screenshots/dashboard_segment_split.png)
+![Profit Margin by Region and Category](./dashboard_region_category.png)
+![Average Profit by Discount Bracket](./dashboard_discount_impact.png)
+![Sales Distribution by Customer Segment](./dashboard_segment_split.png)
 
 ## Repository Structure
-```
-├── data/               # raw CSV file
-├── sql/                # all SQL query files
-├── screenshots/        # chart images
+├── sql/ # schema and analysis query files
+├── dashboard_*.png # chart images
 └── README.md
-```
 
 ## How to Run
 1. Import `data/superstore.csv` into MySQL using the schema in `sql/schema.sql`
