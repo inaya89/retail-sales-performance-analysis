@@ -1,28 +1,28 @@
 # Retail Sales Performance Analysis
 
-## 📌 Overview
+## Overview
 A data analysis project examining retail sales, profit, and discount trends
 across regions, categories, and customer segments using SQL and Excel/Numbers.
 Built to identify where the business is losing margin and recommend pricing
 actions.
 
-## 🎯 Business Problem
+## Business Problem
 Leadership wants to understand which regions/categories are underperforming
 on profit despite strong sales, and whether current discounting practices
 are eroding margin.
 
-## 📊 Dataset
+## Dataset
 - Source: Sample Superstore Dataset (Kaggle)
 - Size: ~9,994 rows
 - Fields: Ship mode, segment, country, city, state, postal code, region,
   category, sub-category, sales, quantity, discount, profit
 
-## 🛠️ Tools Used
+## Tools Used
 - MySQL — data storage, cleaning, and querying
 - MySQL Workbench — schema design and SQL analysis
 - Numbers (Excel-equivalent) — data visualization
 
-## 🔍 Process
+## Process
 1. **Schema Design**: Loaded the Superstore CSV into a MySQL table
    (`retail_analysis.sales`) with appropriate data types for each field
 2. **Data Import**: Verified successful import of all 9,994 rows via MySQL
@@ -33,12 +33,12 @@ are eroding margin.
 4. **Visualization**: Exported query results as CSVs and built charts in
    Numbers to visualize the findings
 
-## ❓ Key Business Questions Answered
+## Key Business Questions Answered
 - Which regions/categories have the highest profit vs. highest revenue?
 - At what discount level does profit turn negative?
 - Which customer segment is most profitable relative to its sales volume?
 
-## 💡 Key Insights
+## Key Insights
 
 **1. Central region's Furniture category is unprofitable overall**
 Central Furniture generated ₹1.63L in sales but posted a net loss
@@ -59,12 +59,12 @@ and revenue (₹11.6L), but yields the lowest profit margin (11.5%) of the
 three segments. Home Office, despite generating the least revenue, is the
 most profitable segment by margin (14.0%).
 
-## 📈 Dashboard Preview
+## Dashboard Preview
 ![Profit Margin by Region and Category](./screenshots/dashboard_region_category.png)
 ![Average Profit by Discount Bracket](./screenshots/dashboard_discount_impact.png)
 ![Sales Distribution by Customer Segment](./screenshots/dashboard_segment_split.png)
 
-## 📁 Repository Structure
+## Repository Structure
 ```
 ├── data/               # raw CSV file
 ├── sql/                # all SQL query files
@@ -72,10 +72,10 @@ most profitable segment by margin (14.0%).
 └── README.md
 ```
 
-## 🚀 How to Run
+## How to Run
 1. Import `data/superstore.csv` into MySQL using the schema in `sql/schema.sql`
 2. Run queries in `sql/analysis_queries.sql`
 3. Export results as CSV and visualize in Excel/Numbers/Power BI
 
-## 👤 Author
+## Author
 Inchara M — inchara.094@gmail.com
